@@ -1,8 +1,14 @@
 class GithubController < ApplicationController
   def index
-      @search= params[:search]
-
+    if params[:search] == nil
+      @search = "wyncode"
+      @profile = Github.new.get_profile("wyncode")
+    else
+      @search = params[:search]
       @profile = Github.new.get_profile(@search)
+    end
+
+
 
   end
 
