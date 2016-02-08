@@ -3,7 +3,7 @@ class GithubController < ApplicationController
 
       @profile = Github.new.get_profile
 
-  
+
   end
 
 
