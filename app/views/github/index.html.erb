@@ -3,8 +3,8 @@
 
 
 <form action="githubcontroller">
-Search: <input type="text" name="search"><br>
-<input type="submit" value="Submit">
+  Search: <input type="text" name="search"><br>
+  <input type="submit" value="Submit">
 </form>
 
 
@@ -13,14 +13,16 @@ Search: <input type="text" name="search"><br>
 <dl>
 
 
-<% @profile["posts"].each do |n| %>
-<div class="photobox">
+  <% @profile["posts"].each do |n| %>
 
-  <a href=""><img src='<%= n["urls"][0]["url"] %>'></a>
-  <h2><% @yoyo %></h2>
+  <div class="photobox">
 
-</div>
-<% end %>
+    <a href=""><img src='<%= n["urls"][0]["url"] %>'></a>
+
+    <h2><% @yoyo %></h2>
+
+  </div>
+  <% end %>
 
 
 
