@@ -14,8 +14,12 @@ Search: <input type="text" name="search"><br>
 
 
 <% @profile["posts"].each do |n| %>
+<div class="photobox">
+
   <a href=""><img src='<%= n["urls"][0]["url"] %>'></a>
   <h2><% @yoyo %></h2>
+
+</div>
 <% end %>
 
 
