@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'github/index'
+  get 'githubcontroller' => 'github#index'
 
   root 'github#index'
 

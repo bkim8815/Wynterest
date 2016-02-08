@@ -1,8 +1,9 @@
 <h1>Wynterest</h1>
 
 
-<form action="github_controller.rb">
-Search: <input type="text" name="search" value=nil><br>
+
+<form action="githubcontroller">
+Search: <input type="text" name="search"><br>
 <input type="submit" value="Submit">
 </form>
 
@@ -11,8 +12,10 @@ Search: <input type="text" name="search" value=nil><br>
 
 <dl>
 
+
 <% @profile["posts"].each do |n| %>
   <img src='<%= n["urls"][0]["url"] %>'>
+  <h2><% @yoyo %></h2>
 <% end %>
 
 
