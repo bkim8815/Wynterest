@@ -1,0 +1,16 @@
+<h1>Wynterest</h1>
+
+
+
+
+
+
+<dl>
+
+<% @profile["posts"].each do |n| %>
+  <img src='<%= n["urls"][0]["url"] %>'>
+<% end %>
+
+
+
+</dl>
