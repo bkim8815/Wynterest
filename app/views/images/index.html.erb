@@ -14,7 +14,7 @@ Search: <input type="text" name="search"><br>
 
 <% @profile["posts"].each do |n| %>
 
-  <a href="images/anything?<%= {url: n["urls"][0]["url"] }.to_query %>>">
+  <a href="images/anything?<%= {url: n["urls"][0]["url"] }.to_query %>">
     <img src='<%= n["urls"][0]["url"] %>'>
   </a>
 
