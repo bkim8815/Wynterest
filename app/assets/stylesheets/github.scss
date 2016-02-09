@@ -2,8 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.photobox {
+  display: inline-block;
+  img {
+    max-width: 128px;
+    max-height: 128px;
+
+  }
+}
+
 .photoresults {
   border-style: solid;
   border-color: gold;
   display: inline-table;
+
 }
