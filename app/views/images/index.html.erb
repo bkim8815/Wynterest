@@ -1,0 +1,37 @@
+<div class="image">
+  <h1 class="header">Wynterest</h1>
+</div>
+
+
+
+<form class="form search" style="text-align:center;" action="githubcontroller">
+    <span class="searchText">
+    <input type="search" name="search" placeholder="Search...."><br>
+    <input type="submit" value="Submit">
+    </span>
+</form>
+
+
+
+
+<!-- <form action="githubcontroller">
+Search: <input type="text" name="search"><br>
+<input type="submit" value="Submit">
+</form> -->
+
+
+
+
+<dl>
+
+<% @profile["posts"].each do |n| %>
+
+  <a href="images/anything?<%= {url: n["urls"][0]["url"] }.to_query %>">
+    <img src='<%= n["urls"][0]["url"] %>'>
+  </a>
+
+<% end %>
+
+
+
+</dl>

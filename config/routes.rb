@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
-  get 'github/index'
-  get 'githubcontroller' => 'github#index'
 
-  root 'github#index'
 
-    get 'github/:username' =>'github#index'
+  get 'githubcontroller' => 'images#index'
+
+  root 'images#index'
+
+
+
+  get 'images/:id' => 'images#show'
+  resources :images
 
 
 

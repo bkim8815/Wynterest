@@ -18,10 +18,12 @@ dl{
   img {
     margin: auto;
     border-style: solid;
-    border-color: #B12B4F;
-    padding: 10px;
-    padding: white;
-    box-shadow: 0px 5px 5px grey;
+    border-color: #ffffff;
+    // border-color: #881c14;
+    border-width: thick;
+    // padding: 5px;
+    // padding: white;
+    // box-shadow: 0px 5px 5px grey;
     box-orient: vertical;
     box-align: center;
     width:100%;
@@ -32,15 +34,15 @@ dl{
 }
 
 .bodyStyle {
+
   // align-items: center;
 
   // background-image: url("http://www.miamiartdistrict.net/wp-content/uploads/galleries/post-56/full/ADSC07520.jpg");
-  // background-color: #000000;
+  background-color: #262626;
 
 }
 
 div.image {
-  //  content:url(http://graffitiwallpix.com/wp-content/themes/graffitiwall/images/banner.jpg);
   background-image:url('WynterestBobMarley.jpg');
   background-size: 100% 100%;
   height: 230px;
@@ -49,7 +51,8 @@ div.image {
   padding:0; /*if your want to padding */
   > h1 {
     text-align: center;
-    color: #B12B4F;
+    text-shadow: 1px 1px 2px black, 0 0 1em #881c14, 0 0 0.2em #881c14;
+    color: white;
     font-family: 'Permanent Marker', cursive;
     font-size: 100px;
     margin-top: 0;
@@ -64,13 +67,14 @@ div.image {
 
 
 input[type="search"]{
-  border: 2px solid;
+  border: 3px solid;
   position: relative;
-  width: 200px;
-  height: 50px;
+  width: 500px;
+  height: 45px;
   padding: 0;
   display: inline-block;
-  color: #B12B4F;
+  color: #ffffff;
+  background-color:#474C55;
   font-size: 1em;
   border-radius: 3px;
   margin-top: 5px;
@@ -81,13 +85,14 @@ input[type="search"]{
 
 input[type="submit"]{
   position: relative;
-  display: block;
+  display: block;;
   height: 100%;
   margin: 0 auto;
-  background-color: #B12B4F;
+  background-color: #881c14;
   color: #fff;
   cursor: pointer;
-  border-radius: 6px;
+  // border-radius: px;
+  font-family: 'Permanent Marker', cursive;
   font-size: 1.24em;
   margin-top: 7px;
 }
